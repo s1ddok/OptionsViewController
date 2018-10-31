@@ -8,13 +8,16 @@
 import UIKit.UITableViewCell
 
 class SelectionOptionCell: UITableViewCell, OptionCell {
-    var style: OptionsViewController.Style = .init()
-    
     
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     
     var option: SelectionOption?
+    var style: OptionsViewController.Style = .init() {
+        didSet {
+            self.setStyle()
+        }
+    }
     
     @IBAction func valueChanged(_ sender: UISegmentedControl) {
         self.option?.value = sender.selectedSegmentIndex
@@ -37,6 +40,14 @@ class SelectionOptionCell: UITableViewCell, OptionCell {
         self.name.text = option.name
         
         self.option = sOption
+        self.selectionStyle = .none
+    }
+    
+    public func setStyle() {
+        self.backgroundColor = self.style.cellBackgroundColor
+        self.contentView.backgroundColor = self.style.cellBackgroundColor
+        self.name.textColor = self.style.cellTitleColor
+        self.segmentedControl.tintColor = self.style.cellAccessoryColor
     }
     
 }

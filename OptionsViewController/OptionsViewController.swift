@@ -42,12 +42,22 @@ public class OptionsViewController: UITableViewController {
         public init() {}
     }
     
-    public var style: Style = .init()
+    public var style: Style
     
     public var options: [Option] = [] {
         didSet {
             self.tableView.reloadData()
         }
+    }
+    
+    public init(style: OptionsViewController.Style) {
+        self.style = style
+        super.init(nibName: nil, bundle: nil)
+        self.view.backgroundColor = .clear
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
     
     fileprivate var registeredTypes: [ObjectIdentifier: UITableViewCell.Type] = [:]
