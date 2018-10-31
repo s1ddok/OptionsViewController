@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		931CDED7213FF57800EB98EE /* OptionsViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 931CDED5213FF57800EB98EE /* OptionsViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		931CDEEA213FF5A700EB98EE /* FloatOptionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 931CDEDD213FF5A600EB98EE /* FloatOptionCell.xib */; };
 		931CDEEB213FF5A700EB98EE /* BoolOptionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 931CDEDE213FF5A600EB98EE /* BoolOptionCell.xib */; };
 		931CDEEC213FF5A700EB98EE /* OptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931CDEDF213FF5A600EB98EE /* OptionCell.swift */; };
@@ -25,7 +24,6 @@
 
 /* Begin PBXFileReference section */
 		931CDED2213FF57800EB98EE /* OptionsViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OptionsViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		931CDED5213FF57800EB98EE /* OptionsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OptionsViewController.h; sourceTree = "<group>"; };
 		931CDED6213FF57800EB98EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		931CDEDD213FF5A600EB98EE /* FloatOptionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FloatOptionCell.xib; sourceTree = "<group>"; };
 		931CDEDE213FF5A600EB98EE /* BoolOptionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BoolOptionCell.xib; sourceTree = "<group>"; };
@@ -76,7 +74,6 @@
 				931CDEF8213FF5C600EB98EE /* View */,
 				931CDEE8213FF5A600EB98EE /* Option+KeyPaths.swift */,
 				931CDEE2213FF5A600EB98EE /* OptionsViewController.swift */,
-				931CDED5213FF57800EB98EE /* OptionsViewController.h */,
 				931CDED6213FF57800EB98EE /* Info.plist */,
 			);
 			path = OptionsViewController;
@@ -130,7 +127,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				931CDED7213FF57800EB98EE /* OptionsViewController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
